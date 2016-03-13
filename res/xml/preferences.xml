@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="@string/prefs_title">
+            
+        <ListPreference android:key="@string/pref_difficulty"
+        	android:title="@string/difficulty_title"
+        	android:entries="@array/difficulty"
+        	android:entryValues="@array/difficulty" 
+        	android:defaultValue="Normalfds"
+       	/>
+
+		<EditTextPreference android:key="@string/pref_max_score" 
+	         android:title="@string/score_title"
+	         android:defaultValue="10" 
+	    />            
+    </PreferenceCategory>
+</PreferenceScreen>
